@@ -1,0 +1,70 @@
+.fo {
+  color: #3d3d3d;
+  font-size: 30px;
+}
+.c-header {
+  width: 90%;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 10px 10px 0 10px;
+  box-shadow: 0px 5px 10px #c6c6c6;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  .title {
+    font-weight: 600;
+    padding-left: 10px !important;
+    padding: 10px 0;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .tag,.locate,.aite {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid #dfdfdf;
+    .left {
+      font-weight: 600;
+      color: #808091;
+      padding-right: 10px;
+    }
+    .right {
+      color: #808091;
+    }
+  }
+  .upload {
+    padding: 10px;
+  }
+  .textarea {
+    resize: none;
+    width: 95%;
+    min-height: 30px;
+    // font-size: 14px;
+    padding: 10px;
+    word-break: break-all;
+  }
+}
+
+.selectBox {
+  .icon-top {
+    display: flex;
+    .iconBox {
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      .icon {
+        width: 35px;
+        height: 35px;
+      }
+      .iconTitle {
+        font-size: 14px;
+        color: #666666;
+      }
+      .activeIcon {
+        border-bottom: 3px solid #f05cea !important;
+      }
+      .activeIconTitle {
+        font-size: 14px;
+        color: #f05cea;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.hotNewBox {
+  width: 90%;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  margin-top: 10px;
+  .title {
+    color: #6c6868;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+  }
+  image {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.postsBox {
+  display: flex;
+  border-bottom: 1px solid #f169ec;
+  .img {
+    width: 100px;
+    height: 90px;
+    border-radius: 8px;
+    margin: 5px 0;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 5px;
+    margin-left: 5px;
+    .titleBox {
+      display: flex;
+      flex-direction: column;
+      .title {
+        letter-spacing: 1px;
+      }
+      .subtitle {
+        font-size: 14px;
+        color: #aeb2b0;
+      }
+    }
+    .bottomBox {
+      display: flex;
+      justify-content: space-between;
+      .infoBox {
+        display: flex;
+        align-items: center;
+        image {
+          width: 15px;
+          height: 15px;
+          padding-right: 3px;
+        }
+        text {
+          font-size: 15px;
+          color: #bdbfbe;
+        }
+        .activeText {
+          color: #f169ec;
+        }
+      }
+    }
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  text {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin: 10px;
+  }
+}

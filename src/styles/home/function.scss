@@ -1,0 +1,227 @@
+.functionBox {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  .left {
+    width: 50%;
+    // background-color: #f169ec;
+    .schoolActivity,
+    .cat,
+    .dz {
+      position: relative;
+      border-radius: 16px;
+      background: linear-gradient(to right top, #ff005c, #feb2ce);
+      box-shadow: 0px 30px 20px -20px #fe7cab;
+      padding: 10px;
+      margin: 10px 0;
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10px;
+        .infoImg {
+          width: 40px;
+          height: 40px;
+        }
+        .infoTitle {
+          color: #fff;
+          font-weight: 600;
+          letter-spacing: 3px;
+        }
+      }
+      .subTitleBox {
+        display: flex;
+        justify-content: flex-end;
+        // padding-top: 5px;
+        padding-right: 5px;
+        .subtitle {
+          color: #fff;
+          font-size: 10px;
+          font-weight: 300;
+        }
+      }
+      .arrow {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .cat {
+      background: linear-gradient(to right top, #8205ff, #c891fe);
+      box-shadow: 0px 30px 20px -20px #b368fe;
+      .info {
+        .infoImg {
+          width: 29px;
+          height: 55px;
+        }
+        .infoTitle {
+          font-size: 14px;
+        }
+      }
+      .subTitleBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0;
+        .subtitle {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .sub2 {
+          color: #fff;
+          font-size: 10px;
+          // margin-right: 50px;
+        }
+      }
+      .arrow {
+        top: 15px;
+      }
+    }
+    .dz {
+      background: linear-gradient(to right top, #0e2dfb, #9397dd);
+      box-shadow: 0px 30px 20px -20px #8895f3;
+      .info {
+        .infoImg {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .subtitle {
+        color: #fff;
+        font-size: 10px;
+        font-weight: 300;
+        padding: 2px 0;
+      }
+      .arrow {
+        top: 15px;
+      }
+    }
+  }
+  .right {
+    position: relative;
+    width: 46%;
+    // background-color: #f169ec;
+    .zycy,
+    .xyq {
+      position: relative;
+      border-radius: 16px;
+      background: linear-gradient(to right top, #f46a05, #fccb4b);
+      box-shadow: 0px 30px 20px -20px #f8bc75;
+      padding: 10px;
+      margin: 10px 0;
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10px;
+        .infoImg {
+          width: 60px;
+          height: 60px;
+        }
+        .infoTitle {
+          color: #fff;
+          font-size: 17px;
+          font-weight: 550;
+          letter-spacing: 3px;
+        }
+      }
+      .subtitle {
+        color: #fff;
+        font-size: 10px;
+        font-weight: 300;
+        padding: 5px 0;
+      }
+      .arrow {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .xyq {
+      background: linear-gradient(to left bottom, #00f0ff, #94f8fe);
+      box-shadow: 0px 30px 20px -20px #8af7fd;
+      .info {
+        .infoImg {
+          width: 80px;
+          height: 90px;
+          padding: 10px 0;
+        }
+        .infoTitle {
+          font-size: 20px;
+        }
+      }
+      .arrow1 {
+        position: absolute;
+        bottom: 12px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .often {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .swiper {
+      height: 150px;
+
+      swiper-item {
+        background-color: #e4e4e4;
+        border-radius: 16px;
+        .fnBox {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          .fn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+          }
+        }
+      }
+    }
+    .more {
+      color: #f169ec;
+      margin: 0 auto;
+    }
+  }
+  .footerImg {
+    position: absolute;
+    bottom: -20px;
+    right: -15px;
+    image {
+      width: 40px;
+      height: 80px;
+    }
+  }
+}
+
+.popBox {
+  .title {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .swiper {
+    width: 280px;
+    height: 280px;
+    background-color: rgba(#fff, 0.9);
+    border-radius: 16px;
+    .popFnBox {
+      .fn {
+        text {
+      
+          color: #8b8b8b;
+        }
+      }
+    }
+  }
+}

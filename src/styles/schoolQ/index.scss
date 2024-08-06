@@ -1,0 +1,11 @@
+.button {
+  display: flex;
+  justify-content: flex-end;
+  text {
+    color: #f169ec;
+    border: 1px solid #f169ec;
+    border-radius: 16px;
+    padding: 5px 20px;
+    margin:10px 10px 0 0;
+  }
+}

@@ -1,0 +1,58 @@
+page {
+  background-color: #f8f8f8;
+}
+
+.header {
+  width: 90%;
+  margin: 0 auto;
+}
+.topBox {
+  display: flex;
+  align-items: center;
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    // color: #f169ec;
+    // font-size: 35px;
+    // font-family: "Times New Roman", Times, serif;
+    // font-weight: 600;
+  }
+  .schoolname {
+    color: #f169ec;
+    font-size: 26px;
+    // font-family: "Times New Roman", Times, serif;
+    font-weight: 600;
+  }
+}
+.inputBox {
+  position: relative;
+  .icon {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .search {
+    color: #808091;
+    font-size: 14px;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 1px 6px 10px #cacaca;
+    padding: 7px;
+    padding-left: 40px;
+    margin: 5px 0;
+    margin-top: 15px;
+  }
+  .girl {
+    // z-index: -1;
+    position: absolute;
+    top: -47px;
+    right: 0px;
+    width: 67px;
+    height: 86px;
+  }
+}
+

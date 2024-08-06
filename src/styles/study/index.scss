@@ -1,0 +1,52 @@
+.header {
+  position: relative;
+}
+.body {
+  // position: absolute;
+  // top: 80px;
+  // left: 0;
+  display: flex;
+  .asideBox {
+    width: 15%;
+    height: calc(100vh - 80px);
+    .aside {
+      height: 50%;
+      border-radius: 16px 0 0 16px;
+      // border-left: 1px solid #f169ec;
+      .sideTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #8c8c8c;
+        font-size: 20px;
+        padding-top: 15px;
+      }
+      .title {
+        margin-bottom: 5px;
+      }
+
+      .aside,
+      .title {
+        transition: all 1s ease-in-out;
+      }
+    }
+  }
+}
+
+.active1 {
+  background-color: #f9f9f9;
+  border-left: 5px solid #f169ec;
+  animation: change 1s ease-in-out;
+}
+@keyframes change {
+  from {
+    border-left: 1px solid #f169ec;
+  }
+  to {
+    border-left: 5px solid #f169ec;
+  }
+}
+.active2 {
+  color: #f169ec;
+  font-weight: 600;
+}

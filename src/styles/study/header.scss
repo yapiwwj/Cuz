@@ -1,0 +1,35 @@
+.headerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff9d00;
+  border-radius: 32px;
+  padding: 10px 30px;
+  text {
+    color: #fff;
+  }
+  .date {
+    font-size: 24px;
+    font-weight: 600;
+    transition: opacity 2s;
+  }
+  .week {
+    font-size: 14px;
+    padding-top: 15px 0;
+    transition: opacity 2s;
+  }
+}
+.right {
+  .avatar {
+    width: 48px;
+    height: 48px;
+  }
+}
