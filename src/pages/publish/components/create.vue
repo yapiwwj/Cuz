@@ -16,49 +16,24 @@
       </view>
       <view class="aite">
         <text class="left">匿名发表：</text>
-        <checkbox-group class="radio" >
+        <checkbox-group class="radio">
           <checkbox value="r1" :checked="isChecked" color="#f05cea" />
         </checkbox-group>
         <text class="right"></text>
       </view>
       <view class="upload">
-        <uni-file-picker
-          v-model="imageValue"
-          fileMediatype="image"
-          mode="grid"
-          @select="select"
-        />
+        <uni-file-picker v-model="imageValue" fileMediatype="image" mode="grid" @select="select" />
       </view>
       <scroll-view scroll-y>
-        <textarea
-          class="textarea"
-          v-model="content"
-          :maxlength="-1"
-          placeholder="分享此刻想法，或选择模板"
-          placeholder-class="textarea-placeholder"
-          @input=""
-        />
+        <textarea class="textarea" v-model="content" :maxlength="-1" placeholder="分享此刻想法，或选择模板"
+          placeholder-class="textarea-placeholder" @input="" />
       </scroll-view>
     </view>
     <view class="selectBox">
       <view class="icon-top">
-        <view
-          class="iconBox"
-          v-for="(item, index) in iconList"
-          :key="item.id"
-          @tap="changeIndex(index)"
-        >
-          <image
-            class="icon"
-            :class="{ activeIcon: activeIconIndex === index }"
-            :src="item.src"
-            mode="scaleToFill"
-          />
-          <text
-            class="iconTitle"
-            :class="{ activeIconTitle: activeIconIndex === index }"
-            >{{ item.name }}</text
-          >
+        <view class="iconBox" v-for="(item, index) in iconList" :key="item.id" @tap="changeIndex(index)">
+          <image class="icon" :class="{ activeIcon: activeIconIndex === index }" :src="item.src" mode="scaleToFill" />
+          <text class="iconTitle" :class="{ activeIconTitle: activeIconIndex === index }">{{ item.name }}</text>
         </view>
       </view>
       <view v-if="activeIconIndex === 0">

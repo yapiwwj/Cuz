@@ -5,18 +5,9 @@
     </view>
     <view class="body">
       <view class="asideBox">
-        <view
-          class="aside"
-          :class="{ active1: id === choseIndex }"
-          v-for="(item, id) in asideTitles"
-          :key="item.id"
-          @tap="changeIndex(id)"
-        >
-          <view
-            class="sideTitle"
-            v-for="(title, index) in item.title"
-            :key="index"
-          >
+        <view class="aside" :class="{ active1: id === choseIndex }" v-for="(item, id) in asideTitles" :key="item.id"
+          @tap="changeIndex(id)">
+          <view class="sideTitle" v-for="(title, index) in item.title" :key="index">
             <text class="title" :class="{ active2: id === choseIndex }">{{
               title
             }}</text>
@@ -35,7 +26,7 @@
 import Header from "./components/header.vue";
 import Forum from "./components/forum.vue";
 import Database from "./components/database.vue";
-import type { aside_title} from "../../types/study/study";
+import type { aside_title } from "../../types/study/study";
 import { reactive } from "vue";
 import { ref } from "vue";
 

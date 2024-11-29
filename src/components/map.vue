@@ -1,11 +1,6 @@
 <template>
   <view>
-    <map
-      class="map"
-      :markers="markers"
-      :longitude="longitude"
-      :latitude="latitude"
-    ></map>
+    <map class="map" :markers="markers" :longitude="longitude" :latitude="latitude"></map>
     <button @tap="search">周边美食</button>
   </view>
 </template>

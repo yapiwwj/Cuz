@@ -1,19 +1,18 @@
 <template>
   <view>
     <view class="header">
-      <view
-        class="title"
-        :class="{ activeTitle: activeIndex === index }"
-        v-for="(item, index) in titleList"
-        :key="item.id"
-        @tap="changeIndex(index)"
-        >{{ item.name }}
+      <view class="title" :class="{ activeTitle: activeIndex === index }" v-for="(item, index) in titleList"
+        :key="item.id" @tap="changeIndex(index)">{{ item.name }}
       </view>
     </view>
     <view> </view>
     <view class="contain">
-      <view v-if="activeIndex === 0"><Create></Create> </view>
-      <view v-if="activeIndex === 1"> <Question></Question></view>
+      <view v-if="activeIndex === 0">
+        <Create></Create>
+      </view>
+      <view v-if="activeIndex === 1">
+        <Question></Question>
+      </view>
     </view>
   </view>
 </template>

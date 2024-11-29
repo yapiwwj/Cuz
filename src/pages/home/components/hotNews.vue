@@ -2,10 +2,7 @@
   <view class="hotNewBox">
     <view class="header">
       <text class="title">校园热帖</text>
-      <image
-        src="../../../static/images/confeti_3_color.png"
-        mode="scaleToFill"
-      />
+      <image src="../../../static/images/confeti_3_color.png" mode="scaleToFill" />
     </view>
     <view class="postsBox" v-for="(item, index) in postLists" :key="item.id">
       <image class="img" :src="item.img" mode="scaleToFill" />
@@ -20,19 +17,12 @@
             <text>{{ item.viewCount }}</text>
           </view>
           <view class="infoBox">
-            <image
-              src="../../../static/images/comments.png"
-              mode="scaleToFill"
-            />
+            <image src="../../../static/images/comments.png" mode="scaleToFill" />
             <text>{{ item.commentsCount }}</text>
           </view>
           <view class="infoBox" @tap="likes(index)">
-            <image
-              :src="
-                item.isLike ? likesSelectIcon : likesIcon
-              "
-              mode="scaleToFill"
-            />
+            <image :src="item.isLike ? likesSelectIcon : likesIcon
+              " mode="scaleToFill" />
             <text :class="{ activeText: item.isLike }">{{
               item.likeCount
             }}</text>

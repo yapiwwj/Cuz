@@ -1,11 +1,7 @@
 <template>
   <view class="loginBox">
     <view class="img-box">
-      <image
-        class="img"
-        src="../../static/images/login.png"
-        mode="scaleToFill"
-      />
+      <image class="img" src="../../static/images/login.png" mode="scaleToFill" />
     </view>
     <view class="title">
       <text class="font">欢迎，小浪花</text>
@@ -19,11 +15,7 @@
     <view class="footer"> </view>
     <view class="circle">
       <view class="logo">
-        <image
-          src="../../static/images/Next.png"
-          mode="scaleToFill"
-          @tap="toHome"
-        />
+        <image src="../../static/images/Next.png" mode="scaleToFill" @tap="toHome" />
       </view>
     </view>
   </view>

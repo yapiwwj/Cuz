@@ -2,7 +2,7 @@
  * funvtion
  */
 interface more {
-  id:number,
+  id: number;
   title?: string;
   img: string;
 }

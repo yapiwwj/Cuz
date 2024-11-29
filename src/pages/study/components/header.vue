@@ -5,11 +5,7 @@
       <text class="week" :style="{ opacity: opacity }">第十五周</text>
     </view>
     <view class="right">
-      <image
-        class="avatar"
-        src="../../../static/images/avatar.png"
-        mode="scaleToFill"
-      />
+      <image class="avatar" src="../../../static/images/avatar.png" mode="scaleToFill" />
     </view>
   </view>
 </template>
@@ -34,9 +30,9 @@ onUnmounted(() => {
 });
 
 //去课表
-const toTimeTable=()=>{
+const toTimeTable = () => {
   uni.navigateTo({
-    url:'/components/timetable',
+    url: '/components/timetable',
   })
 }
 </script>

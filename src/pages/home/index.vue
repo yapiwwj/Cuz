@@ -14,7 +14,7 @@ import HotNews from "./components/hotNews.vue";
 </script>
 
 <style lang="scss">
-page{
-  background-color:#f8f8f8;
+page {
+  background-color: #f8f8f8;
 }
 </style>

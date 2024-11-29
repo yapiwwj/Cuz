@@ -39,5 +39,3 @@ export const useMemberStore = defineStore(
     },
   }
 );
-
-

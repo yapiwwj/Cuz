@@ -5,13 +5,8 @@
     </view>
     <view class="scrollBox2">
       <view class="infoBox">
-        <view
-          class="info"
-          :class="{ activeTag: index === activeIndex }"
-          v-for="(item, index) in tagList"
-          :key="item.id"
-          @tap="changeIndex(index)"
-        >
+        <view class="info" :class="{ activeTag: index === activeIndex }" v-for="(item, index) in tagList" :key="item.id"
+          @tap="changeIndex(index)">
           <text>{{ item.name }}</text>
         </view>
       </view>
@@ -22,15 +17,8 @@
     </view>
 
     <uni-popup ref="popupRef" type="center" :border-radius="'10px 10px 0 0'">
-      <uni-popup-dialog
-        mode="input"
-        title="标签"
-        value="请输入"
-        :duration="2000"
-        :before-close="true"
-        @close="close"
-        @confirm="confirm"
-      ></uni-popup-dialog>
+      <uni-popup-dialog mode="input" title="标签" value="请输入" :duration="2000" :before-close="true" @close="close"
+        @confirm="confirm"></uni-popup-dialog>
     </uni-popup>
   </view>
 </template>

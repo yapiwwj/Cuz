@@ -23,33 +23,15 @@
       <view class="subjectBox">
         <view class="search">
           <image src="../../../static/images/search.png" mode="scaleToFill" />
-          <input
-            v-model="subJect"
-            placeholder="搜索学科..."
-            placeholder-class="input-placeholder"
-          />
+          <input v-model="subJect" placeholder="搜索学科..." placeholder-class="input-placeholder" />
         </view>
-        <view
-          class="subject"
-          :class="{ active: activeIndex === index }"
-          v-for="(item, index) in subjectList"
-          :key="index"
-          @tap="changeIndex(index)"
-        >
+        <view class="subject" :class="{ active: activeIndex === index }" v-for="(item, index) in subjectList" :key="index"
+          @tap="changeIndex(index)">
           <text class="Title" :class="{ activeTitle: activeIndex === index }">{{
             item?.title
           }}</text>
-          <text
-            class="subtitle"
-            :class="{ activeSubTitle: activeIndex === index }"
-            >{{ item?.subtitle }}</text
-          >
-          <text
-            class="confirm"
-            v-if="activeIndex === index"
-            @tap="toForum(item.id)"
-            >确定</text
-          >
+          <text class="subtitle" :class="{ activeSubTitle: activeIndex === index }">{{ item?.subtitle }}</text>
+          <text class="confirm" v-if="activeIndex === index" @tap="toForum(item.id)">确定</text>
         </view>
         <!-- <view class="footer">
           <image
@@ -67,8 +49,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed ,reactive} from "vue";
-import {useStudyStore} from '../../../stores/index'
+import { ref, computed, reactive } from "vue";
+import { useStudyStore } from '../../../stores/index'
 
 const studyStore = useStudyStore();
 //输入框

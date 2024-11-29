@@ -122,6 +122,6 @@ export const useHomeStore = defineStore("homeStore", () => {
 
   return {
     postLists,
-    moreList
+    moreList,
   };
 });

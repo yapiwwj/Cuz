@@ -2,12 +2,7 @@
   <view>
     <text>课表</text>
     <view class="example-body">
-      <uni-datetime-picker
-        type="date"
-        :clear-icon="false"
-        v-model="single"
-        @maskClick="maskClick"
-      />
+      <uni-datetime-picker type="date" :clear-icon="false" v-model="single" @maskClick="maskClick" />
     </view>
   </view>
 </template>

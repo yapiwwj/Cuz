@@ -13,13 +13,8 @@
           </view>
           <scroll-view scroll-x style="white-space: nowrap; z-index: 10">
             <view class="right">
-              <text
-                class="button"
-                :class="{ active: index1 === activeCollege }"
-                v-for="(item, index1) in classifyList"
-                :key="item.id"
-                @tap="changeCollege(index1)"
-                >{{ item.name }}
+              <text class="button" :class="{ active: index1 === activeCollege }" v-for="(item, index1) in classifyList"
+                :key="item.id" @tap="changeCollege(index1)">{{ item.name }}
               </text>
             </view>
           </scroll-view>
@@ -31,13 +26,9 @@
           </view>
           <scroll-view scroll-x style="white-space: nowrap">
             <view class="right">
-              <text
-                class="button"
-                :class="{ active2: index2 === activeMajor }"
-                v-for="(item, index2) in (classifyList[activeCollege as number].major )"
-                :key="item.id"
-                @tap="changeMajor(index2)"
-                >{{ item.name }}
+              <text class="button" :class="{ active2: index2 === activeMajor }"
+                v-for="(item, index2) in (classifyList[activeCollege as number].major)" :key="item.id"
+                @tap="changeMajor(index2)">{{ item.name }}
               </text>
             </view>
           </scroll-view>
@@ -49,15 +40,9 @@
           </view>
           <scroll-view scroll-x style="white-space: nowrap">
             <view class="right">
-              <text
-                class="button"
-                :class="{ active3: index3 === activeTime }"
-                v-for="(item, index3) in  
+              <text class="button" :class="{ active3: index3 === activeTime }" v-for="(item, index3) in  
                 (classifyList[activeCollege as number]
-                .major[activeMajor as number].times)"
-                :key="item.id"
-                @tap="changeTime(index3)"
-                >{{ item.name }}
+                  .major[activeMajor as number].times)" :key="item.id" @tap="changeTime(index3)">{{ item.name }}
               </text>
             </view>
           </scroll-view>
@@ -69,16 +54,10 @@
           </view>
           <scroll-view scroll-x style="white-space: nowrap">
             <view class="right">
-              <text
-                class="button"
-                :class="{ active4: index4 === activeGrade }"
-                v-for="(item, index4) in 
+              <text class="button" :class="{ active4: index4 === activeGrade }" v-for="(item, index4) in 
                 (classifyList[activeCollege as number]
-                .major[activeMajor as number]
-                .times[activeTime as number].grades)"
-                :key="item.id"
-                @tap="changeGrade(index4)"
-                >{{ item.name }}
+                  .major[activeMajor as number]
+                  .times[activeTime as number].grades)" :key="item.id" @tap="changeGrade(index4)">{{ item.name }}
               </text>
             </view>
           </scroll-view>
@@ -90,17 +69,11 @@
           </view>
           <scroll-view scroll-x style="white-space: nowrap">
             <view class="right">
-              <text
-                class="button"
-                :class="{ active5: index5 === activeSubject }"
-                v-for="(item, index5) in 
+              <text class="button" :class="{ active5: index5 === activeSubject }" v-for="(item, index5) in 
                 (classifyList[activeCollege as number]
-                .major[activeMajor as number]
-                .times[activeTime as number]
-                .grades[activeGrade as number].subjects)"
-                :key="item.id"
-                @tap="changeSubject(index5)"
-                >{{ item.name }}
+                  .major[activeMajor as number]
+                  .times[activeTime as number]
+                  .grades[activeGrade as number].subjects)" :key="item.id" @tap="changeSubject(index5)">{{ item.name }}
               </text>
             </view>
           </scroll-view>
